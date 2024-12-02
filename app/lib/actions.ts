@@ -93,6 +93,7 @@ export async function updateInvoice(
   } catch (error) {
     return {
       message: "Database Error: Failed to Update Invoice.",
+      error,
     };
   }
 
@@ -107,6 +108,7 @@ export async function deleteInvoice(id: string) {
   } catch (error) {
     return {
       message: "Database Error: Failed to Delete Invoice.",
+      error,
     };
   }
 }
