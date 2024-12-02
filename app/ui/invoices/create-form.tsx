@@ -44,7 +44,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
           </div>
           <div id="customer-error" className="text-sm text-red-500">
-            {state.errors.customerId &&
+            {state.errors?.customerId &&
               state.errors.customerId.map((error) => (
                 <p key={error} className="mt-1">
                   {error}
@@ -73,7 +73,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             </div>
           </div>
           <div id="amount-error" className="text-sm text-red-500">
-            {state.errors.amount &&
+            {state.errors?.amount &&
               state.errors.amount.map((error) => (
                 <p key={error} className="mt-1">
                   {error}

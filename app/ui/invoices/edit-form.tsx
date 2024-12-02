@@ -51,7 +51,7 @@ export default function EditInvoiceForm({
             <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
           </div>
           <div id="customer-error" className="text-sm text-red-500">
-            {state.errors.customerId &&
+            {state.errors?.customerId &&
               state.errors.customerId.map((error) => (
                 <p key={error} className="mt-1">
                   {error}
@@ -80,7 +80,7 @@ export default function EditInvoiceForm({
               <CurrencyDollarIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
             </div>
             <div id="amount-error" className="text-sm text-red-500">
-              {state.errors.amount &&
+              {state.errors?.amount &&
                 state.errors.amount.map((error) => (
                   <p key={error} className="mt-1">
                     {error}
